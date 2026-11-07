@@ -9,3 +9,6 @@ configServer:
   enabled: true
 eurekaServer:
   enabled: true
+
+probes:
+  enabled: true
