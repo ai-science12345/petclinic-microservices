@@ -24,13 +24,13 @@ spec:
   project: petclinic
 
   source:
-    repoURL: https://github.com/petclinic-project/petclinic-microservices.git
-    targetRevision: HEAD
+    repoURL: https://github.com/ai-science12345/petclinic-microservices.git
+    targetRevision: feature/eks-cicd
     # Points to the directory containing all dev Application CRDs.
     # NOTE: petclinic-eks-deployment is a git submodule inside petclinic-platform.
     # ArgoCD must be told to recurse submodules at the Repository level —
     # run this once when adding the repo:
-    #   argocd repo add https://github.com/petclinic-project/petclinic-microservices.git \
+    #   argocd repo add https://github.com/ai-science12345/petclinic-microservices.git \
     #     --enable-recurse-submodules
     path: kubernetes/base/argocd/applications/dev
 

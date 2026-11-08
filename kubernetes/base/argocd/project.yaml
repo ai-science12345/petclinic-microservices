@@ -14,11 +14,10 @@ metadata:
 spec:
   description: "PetClinic microservices — dev and prod environments"
 
-  # Only the platform repo may be used as source.
-  # IMPORTANT: Replace with the actual GitHub org/repo URL.
+  # Only approved Git repositories may be used as sources.
+  # Uses the actual PetClinic microservices repository.
   sourceRepos:
-    - "https://github.com/petclinic-project/petclinic-platform.git"
-    - "https://github.com/petclinic-project/petclinic-microservices.git"
+    - "https://github.com/ai-science12345/petclinic-microservices.git"
     - "https://aws.github.io/eks-charts"   # LB Controller Helm chart repo
 
   # Application CRDs may deploy only to these namespaces on the in-cluster API.

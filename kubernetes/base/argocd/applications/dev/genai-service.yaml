@@ -12,8 +12,8 @@ metadata:
 spec:
   project: petclinic
   source:
-    repoURL: https://github.com/petclinic-project/petclinic-microservices.git
-    targetRevision: HEAD
+    repoURL: https://github.com/ai-science12345/petclinic-microservices.git
+    targetRevision: feature/eks-cicd
     path: helm/petclinic-service
     helm:
       releaseName: genai-service

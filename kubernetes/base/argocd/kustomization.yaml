@@ -6,4 +6,3 @@ resources:
   - namespace.yaml
   - project.yaml
   - app-of-apps-dev.yaml
-  - app-of-apps-prod.yaml
