@@ -90,7 +90,7 @@ jobs:
             EXPOSED_PORT=${{ steps.meta.outputs.port }}
 
       - name: Trivy vulnerability scan
-        uses: aquasecurity/trivy-action@0.28.0
+        uses: aquasecurity/trivy-action@v0.36.0
         with:
           image-ref: ${{ steps.meta.outputs.image }}:${{ steps.meta.outputs.tag }}
           format: table
