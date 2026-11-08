@@ -89,15 +89,9 @@ jobs:
             ARTIFACT_NAME=spring-petclinic-${{ matrix.service }}
             EXPOSED_PORT=${{ steps.meta.outputs.port }}
 
-      - name: Install Trivy
-        uses: aquasecurity/setup-trivy@e07451d2e059ed86c2870430ea286b3a9e0bf241
-        with:
-          version: v0.71.0
-
       - name: Trivy vulnerability scan
         uses: aquasecurity/trivy-action@v0.36.0
         with:
-          skip-setup-trivy: true
           image-ref: ${{ steps.meta.outputs.image }}:${{ steps.meta.outputs.tag }}
           format: table
           severity: CRITICAL,HIGH
